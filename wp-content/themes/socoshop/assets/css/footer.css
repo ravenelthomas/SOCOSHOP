@@ -1,0 +1,96 @@
+
+footer > ul {
+    display: grid;
+    padding: 20px 0px;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+footer {
+    background-color: #161615;
+}
+
+footer > * {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer > ul > li > ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer > ul > li {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+footer > ul > li > ul > li {
+    font-size: 0.75em;
+    font-weight: normal;
+}
+
+footer ul li {
+    color: #F1F1F1;
+    padding: 5px 0;
+}
+
+footer p,
+footer a {
+    color: #F1F1F1;
+    text-decoration: none;
+}
+
+footer .buying_logo {
+    width: 70%;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+
+footer .buying_logo img {
+    width: clamp(50px, 10vw, 70px);
+}
+
+footer .all-contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+}
+
+footer span.text_us {
+    border: solid 1px white;
+    padding: 5px;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.links ul {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 900px) {
+    footer > ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer .buying_logo {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer .all-contacts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
