@@ -87,10 +87,13 @@ footer span.text_us {
 
     footer .buying_logo {
         width: 90%;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     footer .all-contacts {
         grid-template-columns: repeat(1, 1fr);
+    }
+    footer .links ul{
+        display: inline-block;
     }
 }
